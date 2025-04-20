@@ -1,0 +1,32 @@
+<html>
+	<body>
+		<script type="module">
+			import { animate } from 'https://cdn.jsdelivr.net/npm/animejs/+esm';
+			animate(['feTurbulence', 'feDisplacementMap'], {
+			baseFrequency: .05,
+			scale: 15,
+			alternate: true,
+			loop: true
+			});
+
+		animate('polygon', {
+		points: '64 68.64 8.574 100 63.446 67.68 64 4 64.554 67.68 119.426 100',
+		alternate: true,
+		loop: true
+		});
+</script>
+
+<body>
+
+		<div class="large centered row">
+			<svg width="128" height="128" viewBox="0 0 128 128">
+			  <filter id="displacementFilter">
+				<feTurbulence type="turbulence" numOctaves="2" baseFrequency="0" result="turbulence"/>
+				<feDisplacementMap in2="turbulence" in="SourceGraphic" scale="1" xChannelSelector="R" yChannelSelector="G"/>
+			  </filter>
+			  <polygon points="64 128 8.574 96 8.574 32 64 0 119.426 32 119.426 96"  fill="currentColor"/>
+			</svg>
+			</div>
+
+	</body>
+</html>

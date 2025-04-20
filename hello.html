@@ -1,0 +1,62 @@
+<html>
+  <body style="background-color: #121212; margin: 0;">
+    <h2 class="large grid centered square-grid text-xl">
+      <span>H</span>
+      <span>E</span>
+      <span>L</span>
+      <span>L</span>
+      <span>O</span>
+      <span>&nbsp;</span>
+      <span>W</span>
+      <span>O</span>
+      <span>R</span>
+      <span>L</span>
+      <span>D</span>
+    </h2>
+
+    <style>
+      span {
+        /* display: inline-block; */
+      }
+
+      h2 {
+        display: flex;
+		height: 200px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+        font-size: 100px;
+        color: blue;
+		background: linear-gradient(135deg, #ff6b6b, #6b6bff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      }
+
+      body {
+        background-color: #121212;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+
+    <script type="module">
+      import { animate } from 'https://cdn.jsdelivr.net/npm/animejs/+esm';
+
+      animate('span', {
+        y: [
+          { to: '-2.75rem', ease: 'outExpo', duration: 600 },
+          { to: 0, ease: 'outBounce', duration: 800, delay: 100 }
+        ],
+        rotate: {
+          from: '-1turn',
+          delay: 0
+        },
+        delay: (_, i) => i * 50,
+        ease: 'inOutCirc',
+        loopDelay: 1000,
+        loop: true
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+.App {
+  height: 100vh;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(100px + 2vmin);
+  text-align: center;
+  color: pink
+}
+
+h2 {
+  font-size: calc(100px + 2vmin);
+}
