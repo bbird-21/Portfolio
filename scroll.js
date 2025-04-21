@@ -2,15 +2,10 @@ import { animate, onScroll, stagger } from 'https://cdn.jsdelivr.net/npm/animejs
 
 console.log('hello');
 
-animate('.square', {
-  x: '15rem',
-  rotate: '1turn',
-  ease: 'linear',
-  autoplay: onScroll({
-    container: '.scroll-container',
-    enter: 'bottom-=50 top',
-    leave: 'top+=60 bottom',
-    sync: .25,
-    debug: true,
-  })
+animate('.dev-char', {
+  translateY: [10, 0], // Slide up from 10px below
+  opacity: [0, 1],     // Fade in
+  duration: 800,       // Duration of each character animation
+  delay: stagger(100), // Delay between each character starting (ms)
+  easing: 'easeOutExpo' // Animation easing function
 });

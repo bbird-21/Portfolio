@@ -64,4 +64,8 @@ body {
   color: white;
   font-size: 3rem;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
 }

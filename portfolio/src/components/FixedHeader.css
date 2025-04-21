@@ -1,0 +1,58 @@
+
+.top-left-name {
+	/* ... (keep existing styles: position, top, left, bg, color, padding, etc.) ... */
+	position: fixed;
+	top: 2%;
+	left: 5%;
+	color: white;
+	padding: 10px 20px;
+	font-size: 2.1rem;
+	font-weight: bold;
+	border-bottom-right-radius: 8px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	z-index: 100;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	font-family: 'Poppins', sans-serif;
+  }
+
+  .dev-char {
+	opacity: 0;
+  }
+
+
+  /* --- Styles for the Fixed Top Right Contact Button --- */
+  .top-right-contact {
+	position: fixed;
+	top: 3%;
+	right: 5%;
+	z-index: 100;
+
+	/* Button styling */
+	background-color: white;
+	color: black;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 55px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	font-size: 1.2rem;
+	font-weight: 500;
+	cursor: pointer;
+	text-decoration: none;
+	transition: background-color 0.2s ease-out, transform 0.1s ease-in-out;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Hover effect */
+  .top-right-contact:hover {
+	opacity: 0.9;
+  }
+
+  /* Active/click effect */
+  .top-right-contact:active {
+	background-color: #004085;
+	transform: translateY(1px);
+  }
