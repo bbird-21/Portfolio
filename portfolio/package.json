@@ -11,11 +11,12 @@
   },
   "dependencies": {
     "@react-spring/parallax": "^9.7.5",
+    "@tsparticles/engine": "^3.8.1",
     "animejs": "^4.0.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-spring": "^9.7.5",
-    "react-tsparticles": "^2.12.2"
+    "tsparticles": "^3.8.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",

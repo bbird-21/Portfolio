@@ -1,0 +1,24 @@
+/* src/components/RevealOverlay.css */
+
+.reveal-overlay {
+	position: fixed; /* Cover the entire viewport */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000000; /* Solid black background */
+	z-index: 9998; /* High z-index, but potentially lower than preloader if they briefly overlap */
+	opacity: 1; /* Start fully opaque */
+	pointer-events: auto; /* Initially blocks interaction */
+
+	/* --- Reveal Transition --- */
+	/* Adjust duration and easing as desired */
+	transition: opacity 0.8s ease-out;
+	/* Optional: Add a delay before the fade-out starts */
+	/* transition-delay: 0.2s; */
+  }
+
+  .reveal-overlay.fade-out {
+	opacity: 0;
+	pointer-events: none; /* Allow interaction with content below once faded */
+  }
