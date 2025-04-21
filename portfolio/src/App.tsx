@@ -27,7 +27,7 @@ function App() {
     progress,
     fadeOutPreloader,
     startRevealFadeOut,
-    startDevAnimation,
+    startDevAnimation
   } = useLoadingSequence();
 
   // Event Handlers (can be moved elsewhere if they get complex)

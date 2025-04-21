@@ -57,13 +57,15 @@ body {
 }
 
 .section {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 3rem;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  display: inline-block;
+  font-size: 8rem;
+  background: linear-gradient(10deg, black, blue);
+  font-family: 'Poppins', sans-serif;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  /* No interaction with user */
   user-select: none;
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */

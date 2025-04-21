@@ -11,17 +11,17 @@ interface FixedHeaderProps {
 const FixedHeader: React.FC<FixedHeaderProps> = ({ onContactClick, startDevAnimation }) => {
 
   // Effect for the Anime.js animation, triggered by prop
-  useEffect(() => {
-    if (startDevAnimation) {
-      animate('.dev-char', { // Use animate directly
-        translateY: [10, 0],
-        opacity: [0, 1],
-        duration: 800,
-        delay: stagger(100),
-        easing: 'easeOutExpo'
-      });
-    }
-  }, [startDevAnimation]); // Run when the trigger prop changes to true
+  // useEffect(() => {
+  //   if (startDevAnimation) {
+  //     animate('.dev-char', { // Use animate directly
+  //       translateY: [10, 0],
+  //       opacity: [0, 1],
+  //       duration: 800,
+  //       delay: stagger(100),
+  //       easing: 'easeOutExpo'
+  //     });
+  //   }
+  // }, [startDevAnimation]); // Run when the trigger prop changes to true
 
   return (
     <>
