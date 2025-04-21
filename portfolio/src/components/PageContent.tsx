@@ -14,18 +14,25 @@ interface PageContentProps {
 const PageContent: React.FC<PageContentProps> = ({ particlesInitialized }) => {
   return (
     <>
+
       <Parallax pages={4}>
-      {particlesInitialized && (
-        <Particles
-          id="tsparticles"
-          options={particlesOptions as ISourceOptions}
-          // style={{ zIndex: 0 }} // Ensure it's behind overlays/headers
-        />
-      )}
+      <ParallaxLayer
+        offset={0}
+        speed={1}
+        factor={4}
+      >
+        {particlesInitialized && (
+          <Particles
+            id="tsparticles"
+            options={particlesOptions as ISourceOptions}
+          />
+        )}
+      </ParallaxLayer>
+
 
         <ParallaxLayer offset={0} factor={4} speed={0.5}>
           <div className="section">
-            <h2> hello </h2>
+            <h2> Hey There</h2>
           </div>
         </ParallaxLayer>
 

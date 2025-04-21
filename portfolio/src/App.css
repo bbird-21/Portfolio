@@ -36,31 +36,28 @@
   }
 }
 
-#tsparticles {
-  position: fixed;
-  height: 100%;
+#tsparticles > canvas { /* Target the actual canvas element */
+  display: block; /* Prevents potential small gaps */
   width: 100%;
-  margin: 0;
-  padding: 0;
-  left: 0;
-  top: 0;
-  z-index: -1;
+  height: 100%;
+  position: block;
 }
 
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
 .section {
   display: inline-block;
+  margin-top: 10%;
   font-size: 8rem;
-  background: linear-gradient(10deg, black, blue);
   font-family: 'Poppins', sans-serif;
+  background: linear-gradient(10deg, black, #fffff9);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
