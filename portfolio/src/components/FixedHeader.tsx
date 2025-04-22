@@ -26,10 +26,7 @@ const FixedHeader: React.FC<FixedHeaderProps> = ({ onContactClick, startDevAnima
   return (
     <>
       {/* Top Left Banner */}
-      <div className="top-left-name">
-        {/* Ensure no whitespace */}
-        bbird<span className="dev-char">.</span><span className="dev-char">d</span><span className="dev-char">e</span><span className="dev-char">v</span>
-      </div>
+      <div className="top-left-name"> bbird.dev</div>
 
       {/* Top Right Contact Button */}
       <button

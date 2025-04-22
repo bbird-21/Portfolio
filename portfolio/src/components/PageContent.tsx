@@ -7,11 +7,34 @@ import logo from "../logo.svg"; // Adjust path if necessary
 import particlesOptions from "../particles.json"; // Adjust path if necessary
 // import './PageContent.css'; // Add styles if needed for .section, App-header etc.
 
+import { animate, stagger } from 'animejs';
+
 interface PageContentProps {
   particlesInitialized: boolean;
 }
 
 const PageContent: React.FC<PageContentProps> = ({ particlesInitialized }) => {
+
+    animate('.dev-char', {
+      translateY: [10, 0], // Slide up from 10px below
+      opacity: [0, 1],     // Fade in
+      duration: 800,       // Duration of each character animation
+      delay: stagger(100, { start: 100 }), // Delay between each character starting (ms)
+      easing: 'easeOutExpo', // Animation easing function
+      loop: false
+    });
+
+
+    // animate('.dev-char', {
+    //   translateY: [10, 0], // Slide up from 10px below
+    //   opacity: [0, 1],     // Fade in
+    //   duration: 800,       // Duration of each character animation
+    //   delay: stagger(100, { start: 100 }), // Delay between each character starting (ms)
+    //   easing: 'easeOutExpo', // Animation easing function
+    //   loop: true
+    // });
+
+
   return (
     <>
 
@@ -32,7 +55,11 @@ const PageContent: React.FC<PageContentProps> = ({ particlesInitialized }) => {
 
         <ParallaxLayer offset={0} factor={4} speed={0.5}>
           <div className="section">
-            <h2> Hey There</h2>
+            <h2>
+              <span className="dev-char">H</span><span className="dev-char">e</span><span className="dev-char">y</span>
+
+              <span className="dev-char"> T</span><span className="dev-char">h</span><span className="dev-char">e</span><span className="dev-char">r</span><span className="dev-char">e</span>
+            </h2>
           </div>
         </ParallaxLayer>
 

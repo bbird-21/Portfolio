@@ -13,6 +13,7 @@
     "@react-spring/parallax": "^9.7.5",
     "@tsparticles/engine": "^3.8.1",
     "animejs": "^4.0.1",
+    "gsap": "^3.12.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-spring": "^9.7.5",
